@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>kirbsyum ✧ stream hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="room">
+
+  <!-- Ambient glow -->
+  <div class="ambient"></div>
+
+  <!-- Monitor -->
+  <div class="monitor" onclick="openPanel('about')">
+    <div class="screen boot" id="screen">
+      <p class="boot-text">starting kirbsyumOS...</p>
+    </div>
+  </div>
+
+  <!-- Desk -->
+  <div class="desk"></div>
+
+  <!-- Keyboard -->
+  <div class="keyboard"></div>
+
+  <!-- Floating LED lights -->
+  <div class="led led1"></div>
+  <div class="led led2"></div>
+
+  <!-- Buttons styled as objects -->
+  <div class="objects">
+    <div class="obj" onclick="openPanel('schedule')">📅</div>
+    <div class="obj" onclick="openPanel('announcements')">📢</div>
+    <div class="obj" onclick="openPanel('gallery')">🖼</div>
+  </div>
+
+  <div class="poster" onclick="window.open('https://twitch.tv/YOURNAME')">
+  Twitch
+</div>
+
+<div class="poster poster2" onclick="window.open('https://discord.gg/YOURSERVER')">
+  Discord
+</div>
+
+<div class="kirby kirby1"></div>
+<div class="kirby kirby2"></div>
+<div class="star star1"></div>
+<div class="star star2"></div>
+
+</div>
+
+<!-- Panels -->
+<div id="panel" class="panel hidden">
+  <div class="panel-content" id="panelContent"></div>
+  <button class="close" onclick="closePanel()">X</button>
+</div>
+
+<div id="popupContainer"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
